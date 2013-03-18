@@ -10,11 +10,9 @@
       </select>
       <ul>
         <li ng-repeat="checkin in checkins | filter:query | orderBy:orderProp">
-          <h2>{{checkin.title}}</h2>
-          <h3> {{checkin.description}}</h3>
-          <span class="label label-info">{{checkin.tags}}</span>
+         <h3> {{checkin.description}}</h3>
           <span class="label label-success">Submitted at {{checkin.date}}</span>
-          <p><a href="#/checkins/{{checkin.id}}" class="thumb"><img ng-src="{{checkin.image}}"></a></p>          
+          <p><a href="#/checkins/{{checkin.id}}" class="thumb"><img ng-src="{{checkin.photo}}"></a></p>          
         </li>
       </ul>
     </div>
