@@ -24,7 +24,7 @@ import org.apache.cordova.*;
 
 public class DeviceCheckinAndroid extends DroidGap
 {
-    @Override
+    @Override     
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -33,4 +33,5 @@ public class DeviceCheckinAndroid extends DroidGap
         //super.loadUrl("file:///android_asset/www/index.html")
     }
 }
-
+    
+    

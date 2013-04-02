@@ -1,0 +1,333 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Che",
+				"CheckinMapper"
+			],
+			[
+				"ca",
+				"canchecking"
+			],
+			[
+				"meetin",
+				"meetingId"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"mee",
+				"meetingFullId"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"fore",
+				"foreach	foreach …"
+			],
+			[
+				"meet",
+				"meetingId"
+			],
+			[
+				"getF",
+				"getFbId"
+			],
+			[
+				"Zend",
+				"Zend_Json"
+			],
+			[
+				"User",
+				"UserMapper"
+			],
+			[
+				"font",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/public/css/console.css",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/controllers/TestController.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/point/meeting.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/models/CheckinMapper.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/helpers/Level.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/Bootstrap.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/models/Helpers/levelHelper.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/Helpers/Level.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/point/helpers/getLevelCapacitiy.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/helpers/Level.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/configs/application.ini",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/services/geolocation.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/services/cordova.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/app.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/controllers/main.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/index.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/views/main.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/js/app.js",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/models/Meeting.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/controllers/PointController.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/point/meetinginvitation.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/controllers/ApiController.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/models/User.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/controllers/ConsoleController.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/console/index.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/test-console/index.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/controllers/TestConsoleController.php",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/layouts/scripts/layout.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/layouts/scripts/layout.phtml.orig",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/api/index.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/index/index.phtml",
+		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/public/index.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/partials/checkin-list.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/partials/checkin-maker.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/data/checkins.json",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/partials/idea-maker.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/pg.index.html",
+		"/Users/martinr/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Volumes/dev/pepsi/application/tests/example.test.php",
+		"/Users/martinr/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application",
+			"/Volumes/dev_home/quilmes/Night/src"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"',\n",
+			"getAllCheckinFbIds",
+			"originalMeeting",
+			"limit\noriginalMeeting",
+			"limit",
+			"point.limit",
+			" array(",
+			"meetingId",
+			"MeetingId",
+			"meetingId",
+			"viewmeeting",
+			"Zend_View_Helper_Level",
+			"Array",
+			"config",
+			"fetch",
+			"rga",
+			"Date()",
+			"fetch",
+			"time",
+			"party",
+			"id",
+			"PartyMapper",
+			"fromFacebookProfile",
+			"<=",
+			"95em",
+			"vhosts",
+			"idea",
+			"ideas",
+			"idea",
+			"ideas"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"checkin",
+			"checkins",
+			"checkin",
+			"checkins"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 371.0,
+	"status_bar_visible": true
+}

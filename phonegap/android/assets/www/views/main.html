@@ -1,0 +1,19 @@
+<div class="row">
+
+
+    <div class="hero-unit">
+      <h1>Device Checkin</h1>
+      <h2> Who are you? <small><span class="btn btn-primary" ng-click="takepic()"> Take a Picture!</span></small></h2>
+      <img ng-src="{{photo}}"/>
+      <h2> Where are you know? <small><span class="btn btn-danger" ng-click="refreshLocation()"> Refresh!</span></small></h2>
+
+      <h4>'Latitude{{ position.coords.latitude}}</h4>
+      <h4>Longitude{{position.coords.longitude}}</h4>
+      <h4>Altitude{{ position.coords.altitude}}</h4>
+      <h4>Altitude Accuracy:{{ position.coords.altitudeAccuracy }}</h4>
+      <h4>Heading:{{ position.coords.heading}}</h4>
+      <h4>Speed:{{  position.coords.speed }}</h4>
+      <h4>Timestamp:{{ position.timestamp}}</h4>
+
+  </div>
+</div>
