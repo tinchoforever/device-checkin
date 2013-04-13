@@ -1,13 +1,16 @@
-'use strict';
+(function () {
+  'use strict';
 
-angular.module('initApp', [])
+  initApp
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+    .when('/', {
+      templateUrl: 'views/main.html',
+      controller: 'deviceController'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
   });
+})();
+

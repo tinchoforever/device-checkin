@@ -1,9 +1,15 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<h3>{{device.name}}</h3>
+<h5>{{device.platform }}  {{device.version  }}</h5>
+<small>UUID{{device.uuid}}</small>
+
+<small><span class="span4 btn btn-success btn-large" ng-click="refreshDevice()">Refresh Device</span></small>
+<img ng-src="{{photo}}"/>
+<span class="span4 btn btn-primary btn-large" ng-click="takepic()">Take a Picture!</span><
+<span class="span4 btn btn-danger btn-large" ng-click="refreshLocation()">Refresh!</span>
+<h4>Latitude{{ position.coords.latitude}}</h4>
+<h4>Longitude{{position.coords.longitude}}</h4>
+<h4>Altitude{{ position.coords.altitude}}</h4>
+
+
+
+

@@ -65,6 +65,108 @@
 				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "phonegap/android/assets/www/index.html",
+			"settings":
+			{
+				"buffer_size": 1507,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "function makerController($scope, $http) {\n	$scope.save = function() {\n		$http.post('/api/v1/checkins/',$scope.checkin)\n			.success(function(r) {\n				console.log(r);\n				window.location = \"/\";\n		});\n	}\n}\nmakerController.$inject = ['$scope', '$http'];\n\nfunction feedController ($scope, $http) {\n\n	$http.get('data/checkins.json').success(function(data) {\n		$scope.checkins = data;\n		$scope.orderProp = 'date';\n	});\n\n}\n\nfunction checkinDetailController($scope, $routeParams) {\n	$scope.checkinId = $routeParams.checkinId;\n}\nfeedController.$inject = ['$scope', '$http'];\n\nangular.module('checkinscat', []).\nconfig(['$routeProvider', function($routeProvider) {\n	$routeProvider\n	.when('/checkins', {templateUrl: 'partials/checkin-list.html',   controller: feedController})\n	.when('/checkins/create', {templateUrl: 'partials/checkin-maker.html', controller: makerController})\n	.when('/checkins/:checkinId', {templateUrl: 'partials/checkin-detail.html', controller: checkinDetailController})\n	.otherwise({redirectTo: '/checkins'});\n}]);",
+			"file": "phonegap/android/assets/www/js/app.js",
+			"file_size": 1058,
+			"file_write_time": 1364841659000000,
+			"settings":
+			{
+				"buffer_size": 1026,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 258,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/views/main.html",
+			"settings":
+			{
+				"buffer_size": 1089,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/services/camera.js",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/services/geolocation.js",
+			"settings":
+			{
+				"buffer_size": 651,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/services/device.js",
+			"settings":
+			{
+				"buffer_size": 197,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/services/cordova.js",
+			"settings":
+			{
+				"buffer_size": 438,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/services/accelerometer.js",
+			"settings":
+			{
+				"buffer_size": 638,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/android/assets/www/scripts/services/mobile/device",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "	<div class=\"span6 alert-info\">\n		<h1>{{idea.title}}</h1>\n		<h3> {{idea.description}}</h3>\n		<span class=\"label label-info\">{{idea.tags}}</span>\n	</div>",
+			"file": "phonegap/android/assets/www/partials/checkin-detail.html",
+			"file_size": 156,
+			"file_write_time": 1364860447000000,
+			"settings":
+			{
+				"buffer_size": 152,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -127,6 +229,10 @@
 	},
 	"file_history":
 	[
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/services/photos.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/services/accelerometer.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/services/acelerometer.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/scripts/services/acellerometer",
 		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/public/css/console.css",
 		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/controllers/TestController.php",
 		"/Volumes/dev_home/quilmes/encuentros/Encuentros/src/php/application/views/scripts/point/meeting.phtml",
@@ -186,6 +292,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/*!",
+			"h2",
+			"      '",
+			"</h2>",
+			": '              +",
+			"+ '\\n' +",
+			"console",
+			"deviceController",
 			"',\n",
 			"getAllCheckinFbIds",
 			"originalMeeting",
@@ -223,6 +337,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"h4",
+			"<h2>",
+			"}}</h2>",
+			"{{",
+			"</h2>",
 			"checkin",
 			"checkins",
 			"checkin",
@@ -237,7 +356,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -258,6 +377,338 @@
 						"settings":
 						{
 							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "phonegap/android/assets/www/index.html",
+					"settings":
+					{
+						"buffer_size": 1507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1409,
+								1409
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "phonegap/android/assets/www/js/app.js",
+					"settings":
+					{
+						"buffer_size": 1026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "phonegap/android/assets/www/scripts/app.js",
+					"settings":
+					{
+						"buffer_size": 258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "phonegap/android/assets/www/views/main.html",
+					"settings":
+					{
+						"buffer_size": 1089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								387,
+								387
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "phonegap/android/assets/www/scripts/controllers/main.js",
+					"settings":
+					{
+						"buffer_size": 662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "phonegap/android/assets/www/scripts/services/camera.js",
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "phonegap/android/assets/www/scripts/services/geolocation.js",
+					"settings":
+					{
+						"buffer_size": 651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "phonegap/android/assets/www/scripts/services/device.js",
+					"settings":
+					{
+						"buffer_size": 197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "phonegap/android/assets/www/scripts/services/cordova.js",
+					"settings":
+					{
+						"buffer_size": 438,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								380,
+								380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "phonegap/android/assets/www/scripts/services/accelerometer.js",
+					"settings":
+					{
+						"buffer_size": 638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								638
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "phonegap/android/assets/www/scripts/services/mobile/device",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "phonegap/android/assets/www/partials/checkin-detail.html",
+					"settings":
+					{
+						"buffer_size": 152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

@@ -1,7 +1,7 @@
 'use strict';
 var initApp = angular.module('initApp', []);
 
-initApp.controller('deviceController', function ($scope, geolocation, camera) {
+initApp.controller('deviceController', function ($scope, geolocation, camera, device ) {
   geolocation.getCurrentPosition(function (position) {
     $scope.position = position;
 });
@@ -16,5 +16,11 @@ initApp.controller('deviceController', function ($scope, geolocation, camera) {
        $scope.photo = image;
     });
 
-    }
+    };
+      $scope.takepic = function() {
+        $scope.device = device.getInfo();
+    };
+    $scope.device = device.getInfo();
+
+
 });

@@ -1,0 +1,5 @@
+/*1365112010,173217599*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["VIl4U"]); }
+
+__d("FacebarTypeaheadQuickSelect",["copyProperties","FacebarStructuredText","URI"],function(a,b,c,d,e,f){var g=b('copyProperties'),h=b('FacebarStructuredText'),i=b('URI');function j(k){this._core=k.getCore();this._view=k.getView();this._input=this._core.input;this._listener=null;}g(j.prototype,{enable:function(){this._listener=this._view.subscribe('beforeSelect',this._quickSelect.bind(this));},_quickSelect:function(k,l){if(l.selected.uid!=='search')return true;var m=this._input.getValue().toArray(),n=new h(m),o=n.toString();if(!o)return true;var p={input_query:o,selected_input_query:o,selected_type:'quickselect',selected_text:o,selected_with_mouse:0,selected_semantic:'uri(path(/search/web/direct_search.php?q='+o+'))',extra_uri_params:{source:'quickselect'},uri:new i('/search/web/direct_search.php?q='+o)};this._core.executeQuery(p);return false;},disable:function(){this._listener&&this._view.unsubscribe(this._listener);}});e.exports=j;});

@@ -1,19 +1,35 @@
-<div class="row">
+<div class="row-fluid">
 
+  <div class="span12">
+   <h1>Device Checkin</h1>
+   <div class="row-fluid">
+     <div class="span12">
+         <h3>{{device.name}}</h3>
+         <h5>{{device.platform }}  {{device.version  }}</h5>
+         <small>UUID{{device.uuid}}</small>
+           <div class="span12">
+            <small><span class="span4 btn btn-success btn-large" ng-click="refreshDevice()">Refresh Device</span></small>
+        </div>
+     </div>
+     <div class="span12">
+        <img ng-src="{{photo}}"/>
 
-    <div class="hero-unit">
-      <h1>Device Checkin</h1>
-      <h2> Who are you? <small><span class="btn btn-primary" ng-click="takepic()"> Take a Picture!</span></small></h2>
-      <img ng-src="{{photo}}"/>
-      <h2> Where are you know? <small><span class="btn btn-danger" ng-click="refreshLocation()"> Refresh!</span></small></h2>
-
-      <h4>'Latitude{{ position.coords.latitude}}</h4>
-      <h4>Longitude{{position.coords.longitude}}</h4>
-      <h4>Altitude{{ position.coords.altitude}}</h4>
-      <h4>Altitude Accuracy:{{ position.coords.altitudeAccuracy }}</h4>
-      <h4>Heading:{{ position.coords.heading}}</h4>
-      <h4>Speed:{{  position.coords.speed }}</h4>
-      <h4>Timestamp:{{ position.timestamp}}</h4>
-
-  </div>
+        <div class="span12">
+            <small><span class="span4 btn btn-primary btn-large" ng-click="takepic()">Take a Picture!</span></small>
+        </div>
+        <div class="span12">
+            <small><span class="span4 btn btn-danger btn-large" ng-click="refreshLocation()">Refresh!</span></small>
+        </div>
+        <div class="span12">
+            <h4>Latitude{{ position.coords.latitude}}</h4>
+            <h4>Longitude{{position.coords.longitude}}</h4>
+            <h4>Altitude{{ position.coords.altitude}}</h4>
+        </div>
+    </div>
 </div>
+</div>
+</div>
+
+
+
+
