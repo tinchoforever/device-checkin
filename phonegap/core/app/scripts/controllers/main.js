@@ -30,5 +30,10 @@ $scope.device = device.getInfo();
 
 $scope.lastCheckin = checkins.load();
 console.log($scope.lastCheckin);
+if ($scope.lastCheckin.photo){
+    //Todo add to photo logic
+  $scope.photo = "data:image/png;base64," + $scope.lastCheckin.photo;
+
+}
 
 });
