@@ -1,8 +1,7 @@
-initApp.factory('geolocation', function ($rootScope, cordovaReady) {
+initApp.factory('camera', function ($rootScope, cordovaReady) {
   return {
-    getCurrentPosition: cordovaReady(function (onSuccess, onError, options) {
-
-      navigator.geolocation.getCurrentPosition(function () {
+    getPicture: cordovaReady(function (onSuccess, onError) {
+        navigator.camera.getPicture(function (imageURI) {
         var that = this,
           args = arguments;
 
@@ -20,8 +19,8 @@ initApp.factory('geolocation', function ($rootScope, cordovaReady) {
             onError.apply(that, args);
           });
         }
-      },
-      options);
-    }),
+      });
+    })
   };
 });
+

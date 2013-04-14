@@ -1,8 +1,7 @@
-initApp.factory('geolocation', function ($rootScope, cordovaReady) {
+initApp.factory('accelerometer', function ($rootScope, cordovaReady) {
   return {
-    getCurrentPosition: cordovaReady(function (onSuccess, onError, options) {
-
-      navigator.geolocation.getCurrentPosition(function () {
+    getCurrentAcceleration: cordovaReady(function (onSuccess, onError) {
+      navigator.accelerometer.getCurrentAcceleration(function () {
         var that = this,
           args = arguments;
 
@@ -20,8 +19,7 @@ initApp.factory('geolocation', function ($rootScope, cordovaReady) {
             onError.apply(that, args);
           });
         }
-      },
-      options);
-    }),
+      });
+    })
   };
 });
