@@ -1,7 +1,7 @@
 initApp.factory('geolocation', function ($rootScope, cordovaReady) {
   return {
     getCurrentPosition: cordovaReady(function (onSuccess, onError, options) {
-
+      console.log("getCurrentPosition");
       navigator.geolocation.getCurrentPosition(function () {
         var that = this,
           args = arguments;
@@ -22,6 +22,6 @@ initApp.factory('geolocation', function ($rootScope, cordovaReady) {
         }
       },
       options);
-    })
+    }),
   };
 });

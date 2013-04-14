@@ -1,32 +1,29 @@
-<div ng-controller="deviceController">
+
+<div>
     <div class="container">
       <div class="row">
         <div class="twelve columns">
-         <h3>{{device.name}}</h3>
-         <h5>{{device.platform }}  {{device.version  }}</h5>
-         <small>UUID{{device.uuid}}</small>
-         <div class="medium primary btn">
-            <a href="#" ng-click="refreshDevice()">Refresh Device</a>
-        </div>
+           <h3>{{device.name}}</h3>
+           <h5>{{device.platform }}  {{device.version  }}</h5>
+           <small>UUID{{device.uuid}}</small>
     </div>
 </div>
 <div class="row">
     <div class="twelve colgrid">
         <div class="row">
             <div class="six columns">
-             <img ng-src="{{photo}}"/>
-
-             <div class="medium secondary btn">
-                <a href="#" ng-click="takepic()">Take a Picture!</a>
+               <img ng-src="{{photo}}"/>
+               <div class="medium secondary btn">
+                <a href="" ng-click="takepic()">Take a Picture!</a>
             </div>
         </div>
         <div class="six columns">
-           <div class="medium primary btn">
-            <a href="#" ng-click="refreshLocation()">Refresh Location</a>
+         <div class="medium primary btn">
+            <a href="" ng-click="refreshLocation()">Refresh Location</a>
         </div>
-        <h4>Latitude{{ position.coords.latitude}}</h4>
-        <h4>Longitude{{position.coords.longitude}}</h4>
-        <h4>Altitude{{ position.coords.altitude}}</h4>
+        <h4>Latitude {{ position.coords.latitude}}</h4>
+        <h4>Longitude {{position.coords.longitude}}</h4>
+        <h4>Altitude {{ position.coords.altitude}}</h4>
 
     </div>
 
