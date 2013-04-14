@@ -4,7 +4,6 @@ initApp.factory('camera', function ($rootScope, cordovaReady) {
         navigator.camera.getPicture(function (imageURI) {
         var that = this,
           args = arguments;
-          console.log(imageURI);
 
         if (onSuccess) {
           $rootScope.$apply(function () {

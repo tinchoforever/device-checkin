@@ -1,14 +1,49 @@
-<h3>{{device.name}}</h3>
-<h5>{{device.platform }}  {{device.version  }}</h5>
-<small>UUID{{device.uuid}}</small>
+<h1> {{aaa}}</h1>
+<div>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+           <h3>{{device.name}}</h3>
+           <h5>{{device.platform }}  {{device.version  }}</h5>
+           <small>UUID{{device.uuid}}</small>
+           <div class="medium primary btn">
+            <a href="#" ng-click="refreshDevice()">Refresh Device</a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="twelve colgrid">
+        <div class="row">
+            <div class="six columns">
+               <img ng-src="{{photo}}"/>
+               {{photo}}
+               <div class="medium secondary btn">
+                <a href="#" ng-click="takepic()">Take a Picture!</a>
+            </div>
+        </div>
+        <div class="six columns">
+         <div class="medium primary btn">
+            <a href="#" ng-click="refreshLocation()">Refresh Location</a>
+        </div>
+        <h4>Latitude{{ position.coords.latitude}}</h4>
+        <h4>Longitude{{position.coords.longitude}}</h4>
+        <h4>Altitude{{ position.coords.altitude}}</h4>
 
-<small><span class="span4 btn btn-success btn-large" ng-click="refreshDevice()">Refresh Device</span></small>
-<img ng-src="{{photo}}"/>
-<span class="span4 btn btn-primary btn-large" ng-click="takepic()">Take a Picture!</span><
-<span class="span4 btn btn-danger btn-large" ng-click="refreshLocation()">Refresh!</span>
-<h4>Latitude{{ position.coords.latitude}}</h4>
-<h4>Longitude{{position.coords.longitude}}</h4>
-<h4>Altitude{{ position.coords.altitude}}</h4>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
