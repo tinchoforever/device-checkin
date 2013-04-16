@@ -38,6 +38,8 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
+Route::any('api/v1/devices/checkin', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
+
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
