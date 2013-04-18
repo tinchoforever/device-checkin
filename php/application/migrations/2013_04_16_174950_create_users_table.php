@@ -7,7 +7,7 @@ class Create_Users_Table {
 		Schema::create('users', function($table) {
 			$table->increments('id');
 			$table->string('fullname');
-			$table->string('username')->unique();;
+			$table->string('username')->unique();
 			$table->timestamps();
 	});
 

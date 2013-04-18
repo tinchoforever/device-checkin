@@ -1,4 +1,7 @@
-device-checkin
+Who has it?
 ==============
 
-Laravel + Phonegap + boostrap + Angular.Js
+Platform that let manage teams devices.
+
+
+Laravel + Phonegap + glumby + Angular.Js
