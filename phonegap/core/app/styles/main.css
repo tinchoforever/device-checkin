@@ -1,1 +1,5 @@
 /* Will be compiled down to a single stylesheet with your sass files */
+.slide-enter-setup {
+    -webkit-transform: translateX(-100%);
+    background: red;
+}
