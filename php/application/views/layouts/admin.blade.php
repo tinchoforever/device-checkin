@@ -1,11 +1,20 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!--[if lte IE 8]>
+  <script>
+    document.createElement('ng-include');
+    document.createElement('ng-pluralize');
+    document.createElement('ng-view');
+    document.createElement('ng:include');
+    document.createElement('ng:pluralize');
+    document.createElement('ng:view');
+  </script>
+  <![endif]-->
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
@@ -46,35 +55,14 @@
     </div>
   </div>
   <!-- Add your site or application content here -->
-  <div class="container" ng-animate="'slide'" ng-view>
+  <div class="container">
+    @yield('content')
   </div>
 
 
   <!-- build:js scripts/scripts.js -->
-
-  <script src="cordova-2.5.0.js"></script>
   <script src="js/frameworks/angular.min.js"></script>
 
-  <!-- Remote Debugger! -->
-  <script src="http://debug.phonegap.com/target/target-script-min.js#123456"></script>
-
-  <script src="js/controllers/main.js"></script>
-
-  <script src="js/services/mobile/cordova.js"></script>
-  <script src="js/services/mobile/geolocation.js"></script>
-  <script src="js/services/mobile/camera.js"></script>
-  <script src="js/services/mobile/device.js"></script>
-
-
-  <script src="js/services/mobile/device.js"></script>
-
-
-  <script src="js/services/libs/localStorage.js"></script>
-
-
-  <script src="js/services/logic/checkins.js"></script>
-
-  <script src="js/app.js"></script>
 
 
   <!-- endbuild -->
