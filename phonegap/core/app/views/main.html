@@ -5,7 +5,7 @@
             <h5> Martin Rabaglia!, you are using a </h5>
             <h3>{{device.name}} <small>{{device.platform }}  {{device.version  }}</small></h3>
             <small>UUID{{device.uuid}}</small>
-            <h6> in <b> 1572 @ Buenos Aires </b> since 3 days </h6>
+            <h6> in <b> 1572 @ Buenos Aires </b> {{lastuse}} </h6>
 
         </div>
     </div>
@@ -13,17 +13,17 @@
         <div class="twelve columns">
            <h5 class="danger alert">Aren't you Martin? </h5>
            <p><div class="medium danger btn">
-             <a href="#/location" ng-click="">Checkin now!</a>
+             <a href="" ng-click="submitCheckin()">Checkin now!</a>
          </div></p>
 
-         <h5 class="primary alert">Do you want deliver this device? </h5>
+    <!--      <h5 class="primary alert">Do you want deliver this device? </h5>
          <p><div class="medium primary btn">
             <a href="#/location" ng-click="">Handoff Now</a>
         </div></p>
 
         <h5 class="secondary alert">If you are not using it...</h5>
         <p> <div class="medium secondary btn">
-         <a href="#/location" ng-click="">Why not Checkout?</a>
+         <a href="#/location" ng-click="">Why not Checkout?</a> -->
      </div></p>
  </div>
 </div>

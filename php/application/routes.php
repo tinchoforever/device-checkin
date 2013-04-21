@@ -33,12 +33,10 @@
 */
 Route::controller(Controller::detect());
 
-Route::get('/', function()
-{
-	return View::make('home.index');
-});
+Route::get('/', array('as' => 'home', 'uses' => 'home@index'));
 
-Route::any('api/v1/devices/checkin', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
+Route::post('api/v1/devices/checkin', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
+Route::post('api/v1/devices/create', array('as' => 'api.devices', 'uses' => 'api.devices@create'));
 
 /*
 |--------------------------------------------------------------------------
@@ -101,12 +99,13 @@ Route::filter('before', function()
 
 Route::filter('after', function($response)
 {
-	// Do stuff after every request to your application...
+
+
 });
 
 Route::filter('csrf', function()
 {
-	if (Request::forged()) return Response::error('500');
+	$response->header('Access-Control-Allow-Origin', '*');
 });
 
 Route::filter('auth', function()

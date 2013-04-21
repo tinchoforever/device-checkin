@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width">
   <script src="js/frameworks/zepto.min.js"></script>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="stylesheet" href="css/gumby.css">
+  <link rel="stylesheet" href="css/frameworks/gumby.css">
   <link rel="stylesheet" href="css/base.css">
 
 
