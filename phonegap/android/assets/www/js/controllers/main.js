@@ -5,28 +5,35 @@ initApp.controller('deviceController', function ($scope, $http, geolocation, cam
 
   $scope.refreshLocation = function() {
    geolocation.getCurrentPosition(function (position) {
-    console.log(position);
-  });
+     $scope.position = position;
+     $scope.map = "http://maps.google.com/maps/api/staticmap?sensor=false&center=" + position.coords.latitude + "," +
+                    position.coords.longitude + "&zoom=20&size=300x200&markers=color:blue|label:S|" +
+                    position.coords.latitude + ',' + position.coords.longitude;
+   });
  };
+
  $scope.takepic = function() {
   camera.getPicture(function (image) {
     $scope.photo = image;
   });
 
 };
+
 $scope.refreshDevice = function() {
-  $scope.device = device.getInfo();
+  device.getInfo(function (deviceinfo) {
+    $scope.deviceinfo = deviceinfo;
+  });
+
 };
 
 $scope.submitCheckin = function() {
-  checkins.submit($scope.photo, $scope.position,$scope.device);
+  checkins.submit($scope.photo, $scope.position,$scope.deviceinfo);
 };
 
 
-geolocation.getCurrentPosition(function (position) {
-  $scope.position = position;
-});
-$scope.device = device.getInfo();
+
+$scope.refreshLocation();
+$scope.refreshDevice();
 
 
 // var lastCheckin = checkins.load();
