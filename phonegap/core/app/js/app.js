@@ -1,7 +1,7 @@
-(function () {
+
   'use strict';
 
-  initApp
+  angular.module('initApp', ['initApp.services','initApp.controllers'])
   .config(function ($routeProvider) {
     $routeProvider
     .when('/', {
@@ -20,5 +20,4 @@
       redirectTo: '/'
     });
   });
-})();
 

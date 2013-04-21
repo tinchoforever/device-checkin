@@ -1,5 +1,5 @@
 'use strict';
-var initApp = angular.module('initApp',  ['LocalStorageModule']);
+var initApp = angular.module('initApp.controllers',  ['LocalStorageModule']);
 
 initApp.controller('deviceController', function ($scope, $http, geolocation, camera, device, localStorageService,checkins) {
 
