@@ -34,4 +34,4 @@ public class DeviceCheckinAndroid extends DroidGap
     }
 } 
      
-                    
+                     

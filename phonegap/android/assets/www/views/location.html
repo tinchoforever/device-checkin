@@ -1,14 +1,15 @@
-<div ng-animate="'slide'">
+<div >
     <div class="six columns">
-     <div class="medium primary btn">
+       <img ng-src="{{map}}"/>
+       <h6>Latitude {{position.coords.latitude}}</h6>
+       <h6>Longitude {{position.coords.longitude}}</h6>
+       <h6>Altitude {{position.coords.altitude}}</h6>
+       <div class="medium primary btn">
          <a href="" ng-click="refreshLocation()">Refresh Location</a>
      </div>
-     <h4>Latitude {{ position.coords.latitude}}</h4>
-     <h4>Longitude {{position.coords.longitude}}</h4>
-     <h4>Altitude {{ position.coords.altitude}}</h4>
- <div class="medium secondary btn">
-         <a href="#/picture" >
+     <div class="medium secondary btn">
+       <a href="#/picture" >
           Next! </a>
-       </div>
- </div>
+      </div>
+  </div>
 </div>
