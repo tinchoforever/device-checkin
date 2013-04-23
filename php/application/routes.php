@@ -35,7 +35,7 @@ Route::controller(Controller::detect());
 
 Route::get('/', array('as' => 'home', 'uses' => 'home@index'));
 
-Route::any('api/v1/devices/checkin', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
+Route::any('api/v1/devices/checkin/(:any?)', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
 Route::any('api/v1/devices/create/(:any?)', array('as' => 'api.devices', 'uses' => 'api.devices@create'));
 
 

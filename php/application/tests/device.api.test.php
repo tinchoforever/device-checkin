@@ -15,7 +15,7 @@ public function test_must_create_device()
 {
     $jsondevice=json_encode(
         array(
-            'uid' => "UUIDe0101010d38bde8e6740011221af335301010333".rand(),
+            'uuid' => "UUIDe0101010d38bde8e6740011221af335301010333".rand(),
             "version" =>  "6",
             "name" =>  "iPhone 5",
             "model" =>  "undefined",
