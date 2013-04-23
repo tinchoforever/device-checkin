@@ -35,8 +35,14 @@ Route::controller(Controller::detect());
 
 Route::get('/', array('as' => 'home', 'uses' => 'home@index'));
 
-Route::post('api/v1/devices/checkin', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
-Route::post('api/v1/devices/create', array('as' => 'api.devices', 'uses' => 'api.devices@create'));
+Route::any('api/v1/devices/checkin', array('as' => 'api.devices', 'uses' => 'api.devices@checkin'));
+Route::any('api/v1/devices/create/(:any?)', array('as' => 'api.devices', 'uses' => 'api.devices@create'));
+
+
+Route::get('api/v1/users/all/(:any?)', array('as' => 'api.users', 'uses' => 'api.users@all'));
+Route::get('api/v1/users/autocomplete/(:any)/(:any?)', array('as' => 'api.users', 'uses' => 'api.users@autocomplete'));
+
+Route::get('api/v1/locations/all/(:any?)', array('as' => 'api.locations', 'uses' => 'api.locations@all'));
 
 /*
 |--------------------------------------------------------------------------

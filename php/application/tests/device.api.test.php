@@ -22,8 +22,11 @@ public function test_must_create_device()
             ));
 
     $parameters= array('device' => $jsondevice);
-    $response =$this->post('api.devices@create', $parameters);
+
+    Request::$foundation->setMethod('POST');
+    $response = Controller::call('api.devices@create', $parameters);
     $response = json_decode($response);
+
     $this->assertTrue($response->success);
     $saved = Device::find($response->id);
     $saved->delete();
