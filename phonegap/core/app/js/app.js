@@ -8,6 +8,10 @@
       templateUrl: 'views/main.html',
       controller: 'deviceController'
     })
+    .when('/main', {
+      templateUrl: 'views/main.html',
+      controller: 'deviceController'
+    })
     .when('/select-user', {
       templateUrl: 'views/location.html',
       controller: 'deviceController'

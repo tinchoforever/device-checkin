@@ -8,6 +8,12 @@ initApp.factory('cordovaReady', function() {
     };
 
     document.addEventListener('deviceready', function () {
+      // document.addEventListener("backbutton", function(){}, true);
+
+
+      // navigator.app.overrideBackbutton(true);
+
+
       queue.forEach(function (args) {
         fn.apply(this, args);
       });
