@@ -1,34 +1,41 @@
 <div >
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns">
-            <h5> Martin Rabaglia!, you are using a </h5>
-            <h3>{{deviceinfo.name}} <small>{{deviceinfo.platform }}  {{deviceinfo.version  }}</small></h3>
-            <small>UUID{{deviceinfo.uuid}}</small>
-            <h6> in <b> 1572 @ Buenos Aires </b> {{lastuse}} </h6>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h6 ng-show="lastCheckin"> {{lastCheckin.to.fullname}} , you are using a </h6>
+        <h6 ng-hide="lastCheckin"> You are using a </h6>
+        <h3>{{deviceinfo.name}} <small>{{deviceinfo.platform }}  {{deviceinfo.version  }}</small></h3>
+        <small>UUID{{deviceinfo.uuid}}</small>
+        <h6 ng-show="lastCheckin"> in <b> {{lastCheckin.location.office}} </b> since {{lastuse}} </h6>
 
-        </div>
+      </div>
     </div>
     <div class="row">
-        <div class="twelve columns">
-         <h5 class="danger alert">Aren't you Martin? </h5>
-         <p><div class="medium danger btn">
-           <a href="" ng-click="">Checkin now!</a>
-       </div></p>
+      <div class="twelve columns" ng-hide="lastCheckin">
+       <h5 class="danger alert">How about to checkin this device? </h5>
+       <p><div class="medium danger btn btn-large">
+        <a href="#/select-user"  ng-click="">Checkin now!</a>
+      </div></p>
+    </div>
+    <div class="twelve columns" ng-show="lastCheckin">
+      <h5 class="danger alert">Aren't you {{lastCheckin.to.fullname}} ? </h5>
+      <p><div class="medium danger btn btn-large">
+        <a href="#/select-user"  ng-click="">Checkin now!</a>
+      </div></p>
 
-         <h5 class="primary alert">Do you want deliver this device? </h5>
-         <p><div class="medium primary btn">
-            <a href="#/location" ng-click="">Handoff Now</a>
-        </div></p>
+      <h5 class="primary alert">Do you want deliver this device? </h5>
+      <p><div class="medium primary btn btn-large">
+        <a href="#/select-user" ng-click="">Handoff Now</a>
+      </div></p>
 
-        <h5 class="secondary alert">If you are not using it...</h5>
-        <p> <div class="medium secondary btn">
-           <a href="#/location" ng-click="">Why not Checkout?</a>
-       </div></p>
+      <h5 class="secondary alert">If you are not using it...</h5>
+      <p> <div class="medium secondary btn btn-large">
+       <a href="#/checkout" ng-click="">Why not Checkout?</a>
+     </div></p>
    </div>
+ </div>
 </div>
 
-</div>
 </div>
 
 

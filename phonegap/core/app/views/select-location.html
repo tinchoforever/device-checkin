@@ -1,0 +1,18 @@
+<div >
+  <div class="six columns">
+    <h2>  Where is he going to use it? </h2>
+     <ul class="users">
+     <li ng-repeat="location in locations | filter:query" ng-show="!selected || location == selected">
+      <div class="large btn" ng-click="select(location)"  ng-class="{success: location == selected}">
+        <p>
+          {{location.office}}
+        </p>
+      </div>
+    </li>
+  </ul>
+      <div class="large secondary btn">
+   <a href="#/finish" >
+    Finish</a>
+  </div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="six columns">
+    <h2> Who want the device? </h2>
+    <ul class="seven columns">
+      <li class="field">
+        <input class="search input" type="searcg" placeholder="Search input" ng-model="query">
+        <li>
+        </ul>
+        <ul>
+         <li ng-repeat="user in users | filter:query" ng-show="!selected || user == selected">
+          <div class="large btn" ng-click="select(user)"  ng-class="{success: user == selected}">
+            <p>
+              {{user.fullname}}
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="large secondary btn">
+       <a href="#/select-location" >
+        Next! </a>
+      </div>
+    </div>
+  </div>

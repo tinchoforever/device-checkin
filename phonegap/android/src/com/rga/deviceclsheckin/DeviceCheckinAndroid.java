@@ -29,7 +29,7 @@ public class DeviceCheckinAndroid extends DroidGap
     { 
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
-        super.loadUrl(Config.getStartUrl());
+        super.loadUrl(Config.getStartUrl());   
         //super.loadUrl("file:///android_asset/www/index.html")
     }
 }  

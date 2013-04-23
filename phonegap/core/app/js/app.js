@@ -8,13 +8,21 @@
       templateUrl: 'views/main.html',
       controller: 'deviceController'
     })
-    .when('/location', {
+    .when('/select-user', {
       templateUrl: 'views/location.html',
       controller: 'deviceController'
     })
-    .when('/picture', {
-      templateUrl: 'views/picture.html',
-      controller: 'deviceController'
+    .when('/select-location', {
+      templateUrl: 'views/select-location.html',
+      controller: 'locationController'
+    })
+     .when('/select-user', {
+      templateUrl: 'views/select-user.html',
+      controller: 'usersController'
+    })
+      .when('/finish', {
+      templateUrl: 'views/finish.html',
+      controller: 'checkinController'
     })
     .otherwise({
       redirectTo: '/'

@@ -1,7 +1,7 @@
 'use strict';
-var initApp = angular.module('initApp',  ['LocalStorageModule']);
+var initApp = angular.module('initApp.controllers',  ['LocalStorageModule']);
 
-initApp.controller('deviceController', function ($scope, $http, geolocation, camera, device, localStorageService,checkins) {
+initApp.controller('deviceController', function ($scope, geolocation, camera, device, localStorageService,checkins) {
 
   $scope.refreshLocation = function() {
    geolocation.getCurrentPosition(function (position) {
@@ -22,8 +22,8 @@ initApp.controller('deviceController', function ($scope, $http, geolocation, cam
 $scope.refreshDevice = function() {
   device.getInfo(function (deviceinfo) {
     $scope.deviceinfo = deviceinfo;
+    checkins.setDevice(deviceinfo)
   });
-
 };
 
 $scope.submitCheckin = function() {
@@ -36,19 +36,12 @@ $scope.refreshLocation();
 $scope.refreshDevice();
 
 
-// var lastCheckin = checkins.load();
-// if (lastCheckin){
-//   $scope.lastuse = lastCheckin.time ? lastCheckin.time :1318781876406 ;
-//   $scope.lastuse = moment($scope.lastuse).fromNow();
-// }
+$scope.lastCheckin = checkins.load();
+ if ($scope.lastCheckin){
 
-// $scope.lastCheckin = lastCheckin;
-// console.log($scope.lastCheckin);
-// if ($scope.lastCheckin.photo){
-//     //Todo add to photo logic
-//   $scope.photo = "data:image/png;base64," + $scope.lastCheckin.photo;
-
-// }
+  $scope.lastuse = $scope.lastCheckin.time ?  $scope.lastCheckin.time :1318781876406 ;
+  $scope.lastuse = moment($scope.lastuse).fromNow();
+}
 
 
 
