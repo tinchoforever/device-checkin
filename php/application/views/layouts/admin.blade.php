@@ -22,7 +22,16 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="css/frameworks/gumby.css">
   <link rel="stylesheet" href="css/base.css">
-
+<script>
+WhoHasItConfig = {
+  hostname: "whohasit.no-ip.org",
+  apiPort: 1984
+};
+function getAPIUrl(serviceEndPoint){
+  var baseUrl = "//" + WhoHasItConfig.hostname + (WhoHasItConfig.apiPort != 80 ? (":" + WhoHasItConfig.apiPort) : '')  +  "/api/v1";
+  return baseUrl +  serviceEndPoint;
+}
+</script>
 
 
 </head>
