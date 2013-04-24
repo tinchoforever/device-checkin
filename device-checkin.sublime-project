@@ -6,6 +6,15 @@
 		},
 		{
 			"path": "/Users/martinr/dev/angular-seed"
+		},
+		{
+			"path": "/Users/martinr/dev/osd/takeaphoto"
+		},
+		{
+			"path": "/Applications/MAMP/conf/apache"
+		},
+		{
+			"path": "/Users/martinr/dev/osd/meetingcheckin"
 		}
 	]
 }

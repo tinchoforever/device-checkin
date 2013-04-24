@@ -3,16 +3,19 @@
 class Api_Devices_Controller extends Base_Controller {
 
   public $restful = true;
+
   public function post_checkin(){
    $checkin = Input::json();
-
 
    $newcheckin = new Checkin();
    $currentDevice = Device::where('uuid', '=', $checkin->device->uuid)->first();
    if (!$currentDevice)
    {
             //Create a new one :)
-     $newdevice = new Device($checkin->device);
+     $newdevice = new Device();
+     $newdevice->uuid =$checkin->device->uuid;
+     $newdevice->version =$checkin->device->version;
+     $newdevice->name =$checkin->device->name;
      $newdevice->save();
      $newcheckin->device = $newdevice->id;
    }
@@ -21,16 +24,16 @@ class Api_Devices_Controller extends Base_Controller {
     $newcheckin->device = $currentDevice->id;
   }
 
-  if (isset($checkin->from)){
-   $newcheckin->from = User::where('username', '=', $checkin->from->username)->first()->id;
- }
+ //  if (isset($checkin->from)){
+ //   $newcheckin->from = User::where('username', '=', $checkin->from->username)->first()->id;
+ // }
   $newcheckin->to = User::where('username', '=', $checkin->to->username)->first()->id;
- $newcheckin->location = $checkin->location->office;
- $newcheckin->save();
- $response =  array('success' => true ,
-  'id'=>$newcheckin->id,
-  'date' =>  $newcheckin->created_at);
- return Response::json($response);
+  $newcheckin->location = $checkin->location->office;
+  $newcheckin->save();
+  $response =  array('success' => true ,
+    'id'=>$newcheckin->id,
+    'date' =>  $newcheckin->created_at);
+  return Response::json($response);
 }
 
 public function post_create($device)

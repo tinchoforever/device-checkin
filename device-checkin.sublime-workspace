@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"arra",
+				"array"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
 				"Chec",
 				"checkinResource"
 			],
@@ -48,10 +56,6 @@
 				"meetingFullId"
 			],
 			[
-				"for",
-				"for	for …"
-			],
-			[
 				"opt",
 				"option	Tag"
 			],
@@ -84,66 +88,50 @@
 	"buffers":
 	[
 		{
-			"file": "phonegap/core/app/views/main.html",
-			"settings":
-			{
-				"buffer_size": 1077,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "phonegap/core/config/karma.conf.js",
-			"settings":
-			{
-				"buffer_size": 318,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "phonegap/core/app/js/app.js",
 			"settings":
 			{
-				"buffer_size": 520,
+				"buffer_size": 871,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/core/test/unit/servicesSpec.js",
+			"file": "phonegap/core/app/js/controllers/checkin.js",
 			"settings":
 			{
-				"buffer_size": 859,
+				"buffer_size": 408,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/core/app/js/services/logic/checkins.js",
+			"file": "phonegap/android/assets/www/js/services/logic/checkins.js",
 			"settings":
 			{
-				"buffer_size": 2021,
+				"buffer_size": 2178,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/core/test/unit/controllersSpec.js",
+			"file": "phonegap/android/assets/www/js/controllers/checkin.js",
 			"settings":
 			{
-				"buffer_size": 283,
+				"buffer_size": 327,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/core/app/js/services/configuration.js",
+			"file": "phonegap/android/assets/www/js/services/logic/locations.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 304,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/core/app/js/controllers/main.js",
+			"file": "phonegap/android/assets/www/js/services/logic/users.js",
 			"settings":
 			{
-				"buffer_size": 1468,
+				"buffer_size": 329,
 				"line_ending": "Unix"
 			}
 		}
@@ -208,33 +196,48 @@
 	},
 	"file_history":
 	[
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/main.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/config/karma.conf.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/app.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/test/unit/servicesSpec.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/checkins.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/locations.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/users.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/test/unit/controllersSpec.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/configuration.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/main.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/users.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/checkin.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/locations.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/index.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/checkin.api.test.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/migrations/2013_04_23_121134_add_location_to_checkin.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/users.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/locations.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/routes.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/devices.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/device.api.test.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/controller.base.unittest.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/select-user.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/select-location.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/finish.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/picture.html",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/mobile/cordova.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/location.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/css/frameworks/animate.min.css",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/css/frameworks/angular.animate.css",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/css/base.css",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/main.js",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/checkins.js",
 		"/Users/martinr/dev/angular-seed/test/unit/controllersSpec.js",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/config/karma.conf.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/test/lib/angular/phonegap-mocks.js",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/controller.base.unittest.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/checkin.api.test.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/device.api.test.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/devices.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/migrations/2013_04_20_223006_more_attributes_on_devices.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/private.get.employes.test.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/index.js",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/main.html",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/routes.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/public/.htaccess",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/views/home/index.blade.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/migrations/2013_04_20_234914_more_attributes_on_devices.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/app.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/mobile/device.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/mobile/camera.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/location.html",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/picture.html",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/base/controller.base.unittest.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/css/main.css",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/css/main.small.css",
@@ -315,6 +318,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\">\n",
+			"device",
 			"respond",
 			"localStorageService",
 			"Bigf",
@@ -389,29 +394,28 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "phonegap/core/app/views/main.html",
+					"file": "phonegap/core/app/js/app.js",
 					"settings":
 					{
-						"buffer_size": 1077,
+						"buffer_size": 871,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								262,
+								262
 							]
 						],
 						"settings":
 						{
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -423,18 +427,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "phonegap/core/config/karma.conf.js",
+					"file": "phonegap/core/app/js/controllers/checkin.js",
 					"settings":
 					{
-						"buffer_size": 318,
+						"buffer_size": 408,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								189,
-								195
+								387,
+								387
 							]
 						],
 						"settings":
@@ -449,18 +453,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "phonegap/core/app/js/app.js",
+					"file": "phonegap/android/assets/www/js/services/logic/checkins.js",
 					"settings":
 					{
-						"buffer_size": 520,
+						"buffer_size": 2178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								89,
-								89
+								1340,
+								1340
 							]
 						],
 						"settings":
@@ -470,32 +474,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 103.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "phonegap/core/test/unit/servicesSpec.js",
+					"file": "phonegap/android/assets/www/js/controllers/checkin.js",
 					"settings":
 					{
-						"buffer_size": 859,
+						"buffer_size": 327,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								518,
-								518
+								279,
+								279
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -505,25 +507,23 @@
 				},
 				{
 					"buffer": 4,
-					"file": "phonegap/core/app/js/services/logic/checkins.js",
+					"file": "phonegap/android/assets/www/js/services/logic/locations.js",
 					"settings":
 					{
-						"buffer_size": 2021,
+						"buffer_size": 304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1425,
-								1425
+								0,
+								304
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -533,10 +533,10 @@
 				},
 				{
 					"buffer": 5,
-					"file": "phonegap/core/test/unit/controllersSpec.js",
+					"file": "phonegap/android/assets/www/js/services/logic/users.js",
 					"settings":
 					{
-						"buffer_size": 283,
+						"buffer_size": 329,
 						"regions":
 						{
 						},
@@ -544,66 +544,12 @@
 						[
 							[
 								0,
-								0
+								329
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "phonegap/core/app/js/services/configuration.js",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "phonegap/core/app/js/controllers/main.js",
-					"settings":
-					{
-						"buffer_size": 1468,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								150,
-								150
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -674,6 +620,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 371.0,
+	"side_bar_width": 399.0,
 	"status_bar_visible": true
 }

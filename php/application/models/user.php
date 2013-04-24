@@ -2,8 +2,9 @@
 
 class User extends Eloquent
 {
-    public function comments()
+
+         public function checkins()
     {
-      return $this->has_many('Checkin');
+        return $this->has_many('Checkin',"from");
     }
 }

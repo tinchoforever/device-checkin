@@ -1,17 +1,17 @@
-<?php
+     <?php
 
 class Checkin extends Eloquent
 {
      public function from()
      {
-          return $this->has_one('User');
+          return $this->belongs_to('User', "from");
      }
      public function to()
      {
-          return $this->has_one('User');
+          return $this->belongs_to('User', "to");
      }
      public function device()
      {
-          return $this->has_one('Device');
+          return $this->belongs_to('Device', "device");
      }
 }
