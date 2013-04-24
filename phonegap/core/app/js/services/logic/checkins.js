@@ -38,11 +38,10 @@ angular.module('initApp.services', ['LocalStorageModule', 'ngResource'])
       //Store at local
       localStorageService.add('current', this.next);
       //Submit to server OF COURSE!!
-      // var service ="http://192.168.1.69:1984/api/v1/devices/checkin";
-      // $http.post(service,  this.next).success(function(data) {
+      var service ="http://10.230.34.132:1984/api/v1/devices/checkin";
+      $http.post(service, this.next ).success(function(data) {
          callback();
-      // });
-
+      });
 
 
     },
