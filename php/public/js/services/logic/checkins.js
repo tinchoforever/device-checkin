@@ -13,7 +13,7 @@ angular.module('initApp.services', ['LocalStorageModule', 'ngResource'])
   return {
     getall:function (successCallback)
     {
-      $http.get("http://localhost:1984/api/v1/devices/checkin/all").success(successCallback);
+    	$http.get(getAPIUrl('/devices/checkin/all')).success(successCallback);
    }
  };
 });

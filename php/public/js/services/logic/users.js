@@ -9,9 +9,8 @@ angular.module('initApp.services')
   return {
     getall:function (successCallback)
     {
-      $http.get("http://10.230.34.132:1984/api/v1/users/all/").success(successCallback);
-   }
-
+		$http.get(getAPIUrl('/users/all/')).success(successCallback);
+   	}
  };
 });
 

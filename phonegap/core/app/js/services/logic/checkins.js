@@ -38,7 +38,7 @@ angular.module('initApp.services', ['LocalStorageModule', 'ngResource'])
       //Store at local
       localStorageService.add('current', this.next);
       //Submit to server OF COURSE!!
-      var service ="http://10.230.34.132:1984/api/v1/devices/checkin";
+      var service = getAPIUrl('/devices/checkin');
       $http.post(service, this.next ).success(function(data) {
          callback();
       });
@@ -65,7 +65,7 @@ angular.module('initApp.services', ['LocalStorageModule', 'ngResource'])
         "model" :  device.model  ?  device.model  : ''
       }};
 
-      $http.post('http://192.168.1.69:1984/api/v1/devices/create', data)
+      $http.post(getAPIUrl('/devices/create'), data)
       .success(function(data, status, headers, config) {
         console.log("success");
       }).
