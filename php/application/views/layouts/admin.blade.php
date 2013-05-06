@@ -36,20 +36,6 @@
         </a>
       </h1>
       <ul class="eight columns">
-        <li><a href="#">Features</a></li>
-        <li>
-          <a href="#">Documentation</a>
-          <div class="dropdown">
-            <ul>
-              <li><a href="#">Item</a></li>
-              <li><a href="#">Item</a></li>
-              <li><a href="#">Item</a></li>
-              <li><a href="#">Item</a></li>
-              <li><a href="#">Item</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Customize</a></li>
         <li class="field"><input class="search input" type="search" placeholder="Search"></li>
       </ul>
     </div>
@@ -61,8 +47,16 @@
 
 
   <!-- build:js scripts/scripts.js -->
-  <script src="js/frameworks/angular.min.js"></script>
 
+  <script src="js/frameworks/angular.min.js"></script>
+  <script src="js/frameworks/angular-resource.js"></script>
+  <script src="js/libs/moment.min.js"></script>
+
+  <script src="js/controllers/main.js"></script>
+  <script src="js/services/libs/localStorage.js"></script>
+  <!-- // <script src="js/services/logic/users.js"></script> -->
+
+  <script src="js/app.js"></script>
 
 
   <!-- endbuild -->
