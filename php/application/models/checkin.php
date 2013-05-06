@@ -3,18 +3,18 @@
 class Checkin extends Eloquent
 {
 
-     public $includes = array('from', 'to', 'device');
+
 
      public function from()
      {
-          return $this->belongs_to('User', "from");
+          return $this->has_one('User', "id");
      }
      public function to()
      {
-          return $this->belongs_to('User', "to");
+          return $this->has_one('User', "id");
      }
      public function device()
      {
-          return $this->belongs_to('Device', "device");
+          return $this->has_one('Device', "id");
      }
 }
