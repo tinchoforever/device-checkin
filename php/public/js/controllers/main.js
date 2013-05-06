@@ -1,12 +1,12 @@
 'use strict';
 var initApp = angular.module('initApp.controllers',  ['LocalStorageModule']);
 
-initApp.controller('mainController', function ($scope, localStorageService ) {
+initApp.controller('mainController', function ($scope, localStorageService,checkins ) {
 
 
 
- // users.getall(function(users){
- //    $scope.users = users;
- //  });
+ checkins.getall(function(checkins){
+    $scope.checkins = checkins;
+  });
 
 });

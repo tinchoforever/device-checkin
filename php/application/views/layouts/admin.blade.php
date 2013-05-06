@@ -36,7 +36,6 @@
         </a>
       </h1>
       <ul class="eight columns">
-        <li class="field"><input class="search input" type="search" placeholder="Search"></li>
       </ul>
     </div>
   </div>
@@ -54,7 +53,7 @@
 
   <script src="js/controllers/main.js"></script>
   <script src="js/services/libs/localStorage.js"></script>
-  <!-- // <script src="js/services/logic/users.js"></script> -->
+  <script src="js/services/logic/checkins.js"></script>
 
   <script src="js/app.js"></script>
 
