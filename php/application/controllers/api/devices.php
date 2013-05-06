@@ -55,8 +55,19 @@ public function post_create($device)
 
 public function get_all(){
 
-  $checkins = Checkin::with(array('device','from', 'to'))->order_by('created_at', 'desc')->get();
-  return Response::eloquent($checkins);
+  $checkins = Checkin::order_by('created_at', 'desc')->get();
+  $result = array();
+  foreach ($checkins as $key => $value) {
+    $device = $value->device()->first()->to_array();
+    // $from = $value->from()->first()->to_array();
+    $to = $value->to()->first()->to_array();
+    $value = $value->to_array();
+    $value['device'] = $device;
+    $value['to'] = $to;
+    // $value['from'] = $from;
+    $result[] = $value;
+  }
+  return Response::json($result);
 
 
 }
