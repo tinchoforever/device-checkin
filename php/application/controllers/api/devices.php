@@ -53,6 +53,20 @@ public function post_create($device)
  return Response::json($response);
 }
 
+public function get_all(){
+
+  $checkins = Checkin::with(array('device','from', 'to'))->order_by('created_at', 'desc')->get();
+  // $result= array();
+  // foreach($checkins as $p){
+
+
+  //   $result[] = $p;
+  // }
+  return Response::eloquent($checkins);
+
+
+}
+
 
 
 }

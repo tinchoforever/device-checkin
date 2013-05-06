@@ -22,7 +22,7 @@ initApp.controller('deviceController', function ($scope, geolocation, camera, de
 $scope.refreshDevice = function() {
   device.getInfo(function (deviceinfo) {
     $scope.deviceinfo = deviceinfo;
-    checkins.setDevice(deviceinfo)
+    checkins.setDevice(deviceinfo);
   });
 };
 

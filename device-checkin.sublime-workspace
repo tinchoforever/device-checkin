@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"json",
+				"json_encode"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
 				"arra",
 				"array"
 			],
@@ -30,10 +38,6 @@
 			[
 				"last",
 				"lastCheckin"
-			],
-			[
-				"json",
-				"json_decode"
 			],
 			[
 				"Che",
@@ -96,42 +100,283 @@
 			}
 		},
 		{
-			"file": "phonegap/core/app/js/controllers/checkin.js",
+			"file": "/Users/martinr/dev/osd/takeaphoto/android/assets/www/index.html",
 			"settings":
 			{
-				"buffer_size": 408,
+				"buffer_size": 1829,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/android/assets/www/js/services/logic/checkins.js",
+			"file": "/Users/martinr/dev/osd/takeaphoto/ios/www/index.html",
 			"settings":
 			{
-				"buffer_size": 2178,
+				"buffer_size": 1829,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/android/assets/www/js/controllers/checkin.js",
+			"file": "/Users/martinr/dev/osd/takeaphoto/android/assets/www/js/index.js",
 			"settings":
 			{
-				"buffer_size": 327,
+				"buffer_size": 1914,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/android/assets/www/js/services/logic/locations.js",
+			"file": "/Users/martinr/dev/osd/takeaphoto/ios/www/js/index.js",
 			"settings":
 			{
-				"buffer_size": 304,
+				"buffer_size": 1914,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "phonegap/android/assets/www/js/services/logic/users.js",
+			"file": "/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf",
 			"settings":
 			{
-				"buffer_size": 329,
+				"buffer_size": 1513,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/conf/apache/httpd.conf",
+			"settings":
+			{
+				"buffer_size": 18997,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/core/app/js/services/mobile/camera.js",
+			"settings":
+			{
+				"buffer_size": 612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/takeaphoto/core/app/js/index.js",
+			"settings":
+			{
+				"buffer_size": 2272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/takeaphoto/core/app/index.html",
+			"settings":
+			{
+				"buffer_size": 2005,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nclass Home_Controller extends Base_Controller {\n\n\n\n	public function action_index()\n	{\n      $checkins = Checkin::order_by('created_at', 'desc')->get();\n\n\n      return View::make('home.index')->with('checkins', $checkins);\n  }\n  public function action_index()\n    {\n       return View::make('home.checkins');\n   }\n\n\n}",
+			"file": "php/application/controllers/home.php",
+			"file_size": 236,
+			"file_write_time": 1366827562000000,
+			"settings":
+			{
+				"buffer_size": 323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/controllers/meetingcheckin.php",
+			"settings":
+			{
+				"buffer_size": 153,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/models/checkin.php",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/views/home/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 792,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/views/home/checkins.blade.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/public/js/checkin.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/core/app/js/services/logic/checkins.js",
+			"settings":
+			{
+				"buffer_size": 2179,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/core/app/js/services/logic/locations.js",
+			"settings":
+			{
+				"buffer_size": 316,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/core/app/js/services/logic/users.js",
+			"settings":
+			{
+				"buffer_size": 332,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/models/user.php",
+			"settings":
+			{
+				"buffer_size": 137,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/js/index.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/index.html",
+			"settings":
+			{
+				"buffer_size": 2273,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/angular-seed/app/css/app.css",
+			"settings":
+			{
+				"buffer_size": 366,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/controllers/api/devices.php",
+			"settings":
+			{
+				"buffer_size": 1489,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/controllers/devices.php",
+			"settings":
+			{
+				"buffer_size": 326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application/views/layouts/other.blade.php",
+			"settings":
+			{
+				"buffer_size": 1558,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nimg = document.createElement(\"img\");\nimg.src = photo;\n // Create an empty canvas element\nvar canvas = document.createElement(\"canvas\");\ncanvas.width = img.width;\ncanvas.height = img.height;\n// Copy the image contents to the canvas\nvar ctx = canvas.getContext(\"2d\");\nctx.drawImage(img, 0, 0);\nvar dataURL = canvas.toDataURL(\"image/png\");\nphoto = dataURL.replace(/^data:image\\/(png|jpg);base64,/, \"\");\nconsole.log(photo);",
+			"file": "phonegap/core/app/js/controllers/picture.js",
+			"file_size": 0,
+			"file_write_time": 1366829425000000,
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/views/main.html",
+			"settings":
+			{
+				"buffer_size": 948,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/js/services/logic/checkins.js",
+			"settings":
+			{
+				"buffer_size": 1264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/js/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 911,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/views/finish.html",
+			"settings":
+			{
+				"buffer_size": 479,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/views/picture.html",
+			"settings":
+			{
+				"buffer_size": 392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/martinr/dev/osd/meetingcheckin/js/app.js",
+			"settings":
+			{
+				"buffer_size": 300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonegap/core/app/js/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 1295,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div>\n    <div class=\"six columns\">\n       <img ng-src=\"{{map}}\"/>\n       <h6>Latitude {{position.coords.latitude}}</h6>\n       <h6>Longitude {{position.coords.longitude}}</h6>\n       <h6>Altitude {{position.coords.altitude}}</h6>\n       <div class=\"medium primary btn\">\n         <a href=\"\" ng-click=\"refreshLocation()\">Refresh Location</a>\n     </div>\n  </div>\n</div>\n",
+			"file": "/Users/martinr/dev/osd/meetingcheckin/views/location.html",
+			"file_size": 473,
+			"file_write_time": 1366563060000000,
+			"settings":
+			{
+				"buffer_size": 369,
 				"line_ending": "Unix"
 			}
 		}
@@ -196,27 +441,32 @@
 	},
 	"file_history":
 	[
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/checkin.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/js/services/logic/checkins.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/js/controllers/checkin.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/js/services/logic/locations.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/android/assets/www/js/services/logic/users.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/checkins.js",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/devices.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/routes.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/checkin.api.test.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/device.api.test.php",
+		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/migrations/2013_04_23_211017_device_change_uid_to_uuid.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/main.html",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/config/karma.conf.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/app.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/test/unit/servicesSpec.js",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/checkins.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/locations.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/logic/users.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/test/unit/controllersSpec.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/services/configuration.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/main.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/users.js",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/checkin.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/js/controllers/locations.js",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/index.html",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/checkin.api.test.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/migrations/2013_04_23_121134_add_location_to_checkin.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/users.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/locations.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/routes.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/controllers/api/devices.php",
-		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/device.api.test.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/php/application/tests/controller.base.unittest.php",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/select-user.html",
 		"/Users/martinr/dev/osd/device-checkin/device-checkin/phonegap/core/app/views/select-location.html",
@@ -318,6 +568,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"uid\nuid",
 			"\">\n",
 			"device",
 			"respond",
@@ -394,7 +645,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 29,
 			"sheets":
 			[
 				{
@@ -409,8 +660,8 @@
 						"selection":
 						[
 							[
-								262,
-								262
+								221,
+								237
 							]
 						],
 						"settings":
@@ -427,23 +678,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "phonegap/core/app/js/controllers/checkin.js",
+					"file": "/Users/martinr/dev/osd/takeaphoto/android/assets/www/index.html",
 					"settings":
 					{
-						"buffer_size": 408,
+						"buffer_size": 1829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								387,
-								387
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -453,18 +707,157 @@
 				},
 				{
 					"buffer": 2,
-					"file": "phonegap/android/assets/www/js/services/logic/checkins.js",
+					"file": "/Users/martinr/dev/osd/takeaphoto/ios/www/index.html",
 					"settings":
 					{
-						"buffer_size": 2178,
+						"buffer_size": 1829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1340,
-								1340
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/martinr/dev/osd/takeaphoto/android/assets/www/js/index.js",
+					"settings":
+					{
+						"buffer_size": 1914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								877,
+								877
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/martinr/dev/osd/takeaphoto/ios/www/js/index.js",
+					"settings":
+					{
+						"buffer_size": 1914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								877,
+								877
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf",
+					"settings":
+					{
+						"buffer_size": 1513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1083
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Applications/MAMP/conf/apache/httpd.conf",
+					"settings":
+					{
+						"buffer_size": 18997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1967,
+								1967
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 631.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "phonegap/core/app/js/services/mobile/camera.js",
+					"settings":
+					{
+						"buffer_size": 612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								160
 							]
 						],
 						"settings":
@@ -474,25 +867,219 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 103.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "phonegap/android/assets/www/js/controllers/checkin.js",
+					"buffer": 8,
+					"file": "/Users/martinr/dev/osd/takeaphoto/core/app/js/index.js",
 					"settings":
 					{
-						"buffer_size": 327,
+						"buffer_size": 2272,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								1455,
+								1482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 290.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/martinr/dev/osd/takeaphoto/core/app/index.html",
+					"settings":
+					{
+						"buffer_size": 2005,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1742,
+								1742
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "php/application/controllers/home.php",
+					"settings":
+					{
+						"buffer_size": 323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								319
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "php/application/controllers/meetingcheckin.php",
+					"settings":
+					{
+						"buffer_size": 153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								69
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "php/application/models/checkin.php",
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								162
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 5,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "php/application/views/home/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								566,
+								566
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "php/application/views/home/checkins.blade.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "php/public/js/checkin.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -506,19 +1093,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "phonegap/android/assets/www/js/services/logic/locations.js",
+					"buffer": 16,
+					"file": "phonegap/core/app/js/services/logic/checkins.js",
 					"settings":
 					{
-						"buffer_size": 304,
+						"buffer_size": 2179,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								304
+								1286,
+								1286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 758.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "phonegap/core/app/js/services/logic/locations.js",
+					"settings":
+					{
+						"buffer_size": 316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
 							]
 						],
 						"settings":
@@ -532,11 +1147,37 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "phonegap/android/assets/www/js/services/logic/users.js",
+					"buffer": 18,
+					"file": "phonegap/core/app/js/services/logic/users.js",
 					"settings":
 					{
-						"buffer_size": 329,
+						"buffer_size": 332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "php/application/models/user.php",
+					"settings":
+					{
+						"buffer_size": 137,
 						"regions":
 						{
 						},
@@ -544,12 +1185,439 @@
 						[
 							[
 								0,
-								329
+								137
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/js/index.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 243.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/index.html",
+					"settings":
+					{
+						"buffer_size": 2273,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1684,
+								1684
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 795.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/Users/martinr/dev/angular-seed/app/css/app.css",
+					"settings":
+					{
+						"buffer_size": 366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "php/application/controllers/api/devices.php",
+					"settings":
+					{
+						"buffer_size": 1489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "php/application/controllers/devices.php",
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "php/application/views/layouts/other.blade.php",
+					"settings":
+					{
+						"buffer_size": 1558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								737,
+								737
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 94.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "phonegap/core/app/js/controllers/picture.js",
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/views/main.html",
+					"settings":
+					{
+						"buffer_size": 948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 361.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/js/services/logic/checkins.js",
+					"settings":
+					{
+						"buffer_size": 1264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								914,
+								914
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/js/controllers/main.js",
+					"settings":
+					{
+						"buffer_size": 911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/views/finish.html",
+					"settings":
+					{
+						"buffer_size": 479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/views/picture.html",
+					"settings":
+					{
+						"buffer_size": 392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								334,
+								334
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/js/app.js",
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "phonegap/core/app/js/controllers/main.js",
+					"settings":
+					{
+						"buffer_size": 1295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "/Users/martinr/dev/osd/meetingcheckin/views/location.html",
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								369,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -620,6 +1688,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 399.0,
+	"side_bar_width": 235.0,
 	"status_bar_visible": true
 }

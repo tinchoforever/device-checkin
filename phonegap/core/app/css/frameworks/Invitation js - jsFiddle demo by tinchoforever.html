@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://fiddle.jshell.net/tinchoforever/95Gzb/25/show/ -->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Invitation js - jsFiddle demo by tinchoforever</title>
+  
+  <script type="text/javascript" src="./Invitation js - jsFiddle demo by tinchoforever_files/jquery-1.9.1.js"></script>
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="./Invitation js - jsFiddle demo by tinchoforever_files/result-light.css">
+  
+    
+      <link rel="stylesheet" type="text/css" href="./Invitation js - jsFiddle demo by tinchoforever_files/bootstrap.css">
+    
+    
+  
+    
+    
+      <script type="text/javascript" src="./Invitation js - jsFiddle demo by tinchoforever_files/jquery.snippet.js"></script>
+    
+  
+    
+      <link rel="stylesheet" type="text/css" href="./Invitation js - jsFiddle demo by tinchoforever_files/jquery.snippet.css">
+    
+    
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+function submitInviteToExtrHack() {
+
+    //What is a json ?
+    //http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it
+    var invitation = {
+        //Complete your email
+        email: "martin.rabaglia@rga.com",
+        //Do you have a team? If not, leave it black.
+        teamMembersAre: "Brunito, Rudi",
+        //Do you or your team have a laptop for the match?
+        //If you don't we can provide you one.
+        haveLaptop: true,
+    };
+    var serviceEndPoint = "";
+    //How does post works?
+    //http://api.jquery.com/jQuery.post/
+    $.post(serviceEndPoint, invitation)
+        .done(function (data) {
+        $('.result').html(data);
+    });
+}
+
+
+//Uncomment this line to confirm
+//submitInviteToExtrHack();
+
+$("pre.js").snippet("javascript", {
+    style: "bipolar",
+    transparent: true,
+    showNum: false
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <h1> PLAY | HACK | NERD | FUN </h1>
+
+
+<h6> To submit the invitation just take 2 minutes to edit the jscode or just call the service from the language you preffer</h6>
+For example,
+<div class="snippet-container" style="undefined;"><div class="sh_bipolar snippet-wrap"><pre class="js sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_keyword">function</span> <span class="sh_function">submitInviteToExtrHack</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span> </li><li>        <span class="sh_keyword">var</span> invitation <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span> </li><li>             <span class="sh_comment">//Complete your email </span></li><li>            email<span class="sh_symbol">:</span> <span class="sh_string">"martin.rabaglia@rga.com"</span><span class="sh_symbol">,</span> </li><li>            <span class="sh_comment">//Do you have a team? If not, leave it black. </span></li><li>             teamMembersAre<span class="sh_symbol">:</span> <span class="sh_string">"Brunito, Rudi"</span><span class="sh_symbol">,</span> </li><li>             <span class="sh_comment">//Do you or your team have a laptop for the match? </span></li><li>             <span class="sh_comment">//If you don't we can provide you one. </span></li><li>            haveLaptop<span class="sh_symbol">:</span> <span class="sh_keyword">true</span><span class="sh_symbol">,</span> </li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">;</span> </li><li>    <span class="sh_keyword">var</span> serviceEndPoint  <span class="sh_symbol">=</span> <span class="sh_string">""</span><span class="sh_symbol">;</span></li><li>     $<span class="sh_symbol">.</span><span class="sh_function">post</span><span class="sh_symbol">(</span>serviceEndPoint<span class="sh_symbol">,</span> invitation<span class="sh_symbol">)</span></li><li>        <span class="sh_symbol">.</span><span class="sh_function">done</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span> <span class="sh_symbol">(</span>data<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>        $<span class="sh_symbol">(</span><span class="sh_string">'.result'</span><span class="sh_symbol">).</span><span class="sh_function">html</span><span class="sh_symbol">(</span>data<span class="sh_symbol">);</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li><span class="sh_cbracket">}</span></li><li></li><li></li><li><span class="sh_comment">//Uncomment this line to confirm</span></li><li><span class="sh_comment">//submitInviteToExtrHack();    </span></li><li>    </li></ul></pre></div></div>
+
+<div class="result"></div>
+  
+
+
+
+
+
+</body></html>
