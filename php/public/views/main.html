@@ -7,14 +7,13 @@
         </ul>
         <ul>
           <li ng-repeat="checkin in checkins | filter:query">
-          <div class="large " ng-click="select(user)">
-            <p>
-              {{checkin.name}}
-              {{checkin.platform}}
-              {{checkin.version}}
-              {{checkin.uuid}}
-              {{checkin.lastcheckin.to}}
-            </p>
+          <div class="large ">
+
+             <h1> {{checkin.name}} </h1>
+             <h2>  {{checkin.platform}} {{checkin.version}}</h2>
+             <small> {{checkin.uuid}} </small>
+              <h5>{{checkin.lastcheckin.location}} </h5>
+
           </div>
         </li>
       </ul>
