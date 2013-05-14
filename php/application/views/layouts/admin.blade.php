@@ -28,7 +28,7 @@ WhoHasItConfig = {
   apiPort: 1984
 };
 function getAPIUrl(serviceEndPoint){
-  var baseUrl = "//" + WhoHasItConfig.hostname + (WhoHasItConfig.apiPort != 80 ? (":" + WhoHasItConfig.apiPort) : '')  +  "/api/v1";
+  var baseUrl = "http://" + WhoHasItConfig.hostname + (WhoHasItConfig.apiPort != 80 ? (":" + WhoHasItConfig.apiPort) : '')  +  "/api/v1";
   return baseUrl +  serviceEndPoint;
 }
 </script>
