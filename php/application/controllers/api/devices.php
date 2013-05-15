@@ -64,6 +64,13 @@ public function get_all(){
     //
     $value  =$value->to_array();
     $value['lastcheckin'] =array_shift($value['lastcheckin']);
+
+    //TODO make this better
+    $userID = $value['lastcheckin']['to'];
+    $user = User::where('id', '=', $userID)->first();
+    $value['whohasit'] = $user->fullname;
+    $value['whohasitemail'] = $user->username;
+
    $result[] =  $value;
  }
  return Response::json($result);
